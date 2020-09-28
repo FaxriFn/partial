@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    font-family: ProximaNova, sans-serif;
+    background: #f0f0f7;
+    color: #333;
+}
+#country{
+
+}
+
+.country-page-header{
+    margin-top: 26px;
+}
+.country-page-header h2{
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 40px;
+    font-size: 36px;
+    
+margin-top: 10px;
+}
+.country-content{
+    padding: 60px 0 70px;
+margin: 0 auto;    
+}
+.country-accordion {
+    display: flex;
+    list-style: none;
+    
+}
+.country-accordion  li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: grey;    
+    border-radius: 0;
+    margin: 0;
+    padding: 16px 30px 16px 51px;
+
+position: relative;
+}
+.country-accordion > li.active > a:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background-color: #f95732;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.country-accordion > li.active >.color{
+    background-color: white;
+    
+}
+.country-accordion-body{
+    margin-top: -4px;
+}
+.country-accordion-body-header p{
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+}
+.block{
+    background: #fff;
+    padding: 30px;
+    /* -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .04);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .04);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .04); */
+    border-radius: 0 10px 10px 0;
+}
+.country-inner-tabs{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.country-inner-tabs li {
+   padding-left: 10px;
+}
+ .nav.country-inner-tabs li > a {
+    padding: 3px;
+    border: none;
+    font-weight: normal;
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    color: grey;
+    text-decoration: none;
+
+ }
+ .nav.country-inner-tabs li > a :hover{
+
+    text-decoration: none;
+
+ }
+ .active-inner-tabs{
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding: 5px;
+ }
+ .nav.country-inner-tabs li > span {
+color: grey;
+ }
+
+ .tablist-content ul {
+    list-style: none;
+ }
+ .tablist-content ul li{
+    list-style: none;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    border-bottom: 1px dashed #e2e5e7;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .tablist-content ul li span {
+    color: #000;
+    float: right;
+    font-size: 22px;
+    font-weight: 700;
+}
+.bottom-text{
+    font-size: 14px;
+}
